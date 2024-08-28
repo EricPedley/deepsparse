@@ -101,7 +101,7 @@ class YOLOOutput(BaseModel):
     """
 
     boxes: List[List[List[float]]] = Field(
-        description="List of bounding boxes, one for each prediction"
+        description="List of bounding boxes, one for each prediction, in XYXY format (left, top, right, bottom). Units are pixels."
     )
     scores: List[List[float]] = Field(
         description="List of scores, one for each prediction"
